@@ -2,108 +2,158 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Рыбный макет с изображениями</title>
+  <title>Revo Coffee — Ваш персонализированный кофе</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>revo COFFEE</h1>
-    <p>Ваш персонализированный кофе</p>
-    <img src="assets/img/banner.png" alt="Баннер Revo Coffee" style="width:100%">
+  <!-- Якорная навигация -->
+  <nav class="navigation">
+    <div class="container">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#build" class="navigation__link">Создайте основу</a></li>
+        <li class="navigation__item"><a href="#choose" class="navigation__link">Выберите любимый</a></li>
+        <li class="navigation__item"><a href="#giftset" class="navigation__link">Подарочный набор</a></li>
+        <li class="navigation__item"><a href="#combo" class="navigation__link">Комбо «Фин Фэ»</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">revo COFFEE</h1>
+      <p class="header__subtitle">Your Personalized Coffee</p>
+      <img class="header__banner" src="assets/img/banner.png" alt="Баннер Revo Coffee">
+    </div>
   </header>
 
-  <section>
-    <h2>Создайте основу</h2>
-    <p>Рыба текст начало. Далеко-далеко за&nbsp;словесными горами в&nbsp;стране гласных и&nbsp;согласных живут рыбные тексты.</p>
-
-    <section>
-      <h3>Источник</h3>
-      <img src="assets/icons/IC_Mountain.png" alt="Горы" width="50">
-      <p>Натуральные зёрна арабики, собранные в&nbsp;высокогорных регионах.</p>
-    </section>
-
-    <section>
-      <h3>Качество</h3>
-      <img src="assets/icons/IC_coffee.png" alt="Кофе" width="50">
-      <p>70% качества&nbsp;&mdash; это не&nbsp;просто цифра, это наша философия.</p>
-    </section>
-
-    <section>
-      <h3>Сорта зёрен</h3>
-      <img src="assets/icons/IC_1.png" alt="Зерно 1" width="50">
-      <img src="assets/icons/IC_2.png" alt="Зерно 2" width="50">
-      <img src="assets/icons/IC_3.png" alt="Зерно 3" width="50">
-      <p>Арабика, Робуста, Fine Robusta Blend&nbsp;&mdash; выбирайте свой вкус.</p>
-    </section>
-
-    <section>
-      <h3>Процесс приготовления</h3>
-      <img src="assets/icons/ic.png" alt="Процесс" width="50">
-      <p>Тщательная обработка и&nbsp;обжарка по&nbsp;международным стандартам.</p>
-    </section>
+  <!-- Создайте основу -->
+  <section id="build" class="section section--build">
+    <div class="container">
+      <h2 class="section__title">Создайте основу</h2>
+      <div class="features">
+        <div class="feature">
+          <img class="feature__icon" src="assets/icons/IC_Mountain.png" alt="Горы" width="50">
+          <h3 class="feature__title">Источник</h3>
+          <p class="feature__text">Натуральные зёрна арабики, собранные в высокогорных регионах.</p>
+        </div>
+        <div class="feature">
+          <img class="feature__icon" src="assets/icons/IC_coffee.png" alt="Кофе" width="50">
+          <h3 class="feature__title">Качество</h3>
+          <p class="feature__text">70% качества — это не просто цифра, это наша философия.</p>
+        </div>
+        <div class="feature">
+          <img class="feature__icon" src="assets/icons/IC_1.png" alt="Зерно 1" width="50">
+          <img class="feature__icon" src="assets/icons/IC_2.png" alt="Зерно 2" width="50">
+          <img class="feature__icon" src="assets/icons/IC_3.png" alt="Зерно 3" width="50">
+          <h3 class="feature__title">Сорта зёрен</h3>
+          <p class="feature__text">Арабика, Робуста, Fine Robusta Blend — выбирайте свой вкус.</p>
+        </div>
+        <div class="feature">
+          <img class="feature__icon" src="assets/icons/ic.png" alt="Процесс" width="50">
+          <h3 class="feature__title">Процесс приготовления</h3>
+          <p class="feature__text">Тщательная обработка и обжарка по международным стандартам.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Выберите любимый</h2>
+  <!-- Выберите любимый -->
+  <section id="choose" class="section section--products">
+    <div class="container">
+      <h2 class="section__title">Выберите любимый</h2>
+      <div class="products">
+        <article class="product">
+          <div class="product__badge">Стандарт вкуса</div>
+          <img class="product__image" src="assets/img/image_1.png" alt="REVO Morning" width="150">
+          <h3 class="product__name">Утро с Revo</h3>
+          <p class="product__desc">Мягкий, сладкий, с цветочными нотками.</p>
+          <div class="product__price">99 000 ₫</div>
+          <div class="product__actions">
+            <button class="btn btn--primary">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn btn--outline">ПОДРОБНЕЕ</button>
+          </div>
+        </article>
 
-    <section>
-      <h3>Стандарт вкуса</h3>
-      <img src="assets/img/image_1.png" alt="REVO Morning" width="150">
-      <h4>Утро с Revo</h4>
-      <p>Мягкий, сладкий, с&nbsp;цветочными нотками.</p>
-      <p>Цена: 99&nbsp;000 ₫</p>
-      <p>КУПИТЬ СЕЙЧАС | ПОДРОБНЕЕ</p>
-    </section>
+        <article class="product">
+          <div class="product__badge">Стандарт вкуса</div>
+          <img class="product__image" src="assets/img/IMAGE_2.png" alt="REVO Everyday" width="150">
+          <h3 class="product__name">Повседневный Revo</h3>
+          <p class="product__desc">Сбалансированный вкус с шоколадной горчинкой.</p>
+          <div class="product__price">85 000 ₫</div>
+          <div class="product__actions">
+            <button class="btn btn--primary">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn btn--outline">ПОДРОБНЕЕ</button>
+          </div>
+        </article>
 
-    <section>
-      <h3>Стандарт вкуса</h3>
-      <img src="assets/img/IMAGE_2.png" alt="REVO Everyday" width="150">
-      <h4>Повседневный Revo</h4>
-      <p>Сбалансированный вкус с&nbsp;шоколадной горчинкой.</p>
-      <p>Цена: 85&nbsp;000 ₫</p>
-      <p>КУПИТЬ СЕЙЧАС&nbsp;| ПОДРОБНЕЕ</p>
-    </section>
+        <article class="product">
+          <div class="product__badge">Стандарт вкуса</div>
+          <img class="product__image" src="assets/img/IMAGE_3.png" alt="REVO Origin" width="150">
+          <h3 class="product__name">Revo Оригинал</h3>
+          <p class="product__desc">Лёгкая кислинка, сладкое послевкусие.</p>
+          <div class="product__price">139 000 ₫</div>
+          <div class="product__actions">
+            <button class="btn btn--primary">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn btn--outline">ПОДРОБНЕЕ</button>
+          </div>
+        </article>
 
-    <section>
-      <h3>Стандарт вкуса</h3>
-      <img src="assets/img/IMAGE_3.png" alt="REVO Origin" width="150">
-      <h4>Revo Оригинал</h4>
-      <p>Лёгкая кислинка, сладкое послевкусие.</p>
-      <p>Цена: 139 000 ₫</p>
-      <p>КУПИТЬ СЕЙЧАС | ПОДРОБНЕЕ</p>
-    </section>
-
-    <section>
-      <h3>Стандарт вкуса</h3>
-      <img src="assets/img/image_6.png" alt="REVO Насыщенный" width="150">
-      <h4>Revo Насыщенный</h4>
-      <p>Яркий, насыщенный, с&nbsp;традиционной горечью.</p>
-      <p>Цена: 75 000 ₫</p>
-      <p>КУПИТЬ СЕЙЧАС | ПОДРОБНЕЕ</p>
-    </section>
+        <article class="product">
+          <div class="product__badge">Стандарт вкуса</div>
+          <img class="product__image" src="assets/img/image_6.png" alt="REVO Насыщенный" width="150">
+          <h3 class="product__name">Revo Насыщенный</h3>
+          <p class="product__desc">Яркий, насыщенный, с традиционной горечью.</p>
+          <div class="product__price">75 000 ₫</div>
+          <div class="product__actions">
+            <button class="btn btn--primary">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn btn--outline">ПОДРОБНЕЕ</button>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Лучший подарок другу&nbsp;&mdash; ПОДАРОЧНЫЙ НАБОР</h2>
-    <img src="assets/img/pr-0018-r.png" alt="Подарочный набор" width="200">
-    <p>Подарочный набор &laquo;Кофе по-вьетнамски&raquo;&nbsp;&mdash; идеальный выбор для ценителей.</p>
-    <p>Состав: Fine Robusta Blend<br>
-    Объём: 700&ndash;800&nbsp;мл</p>
-    <p>Цена: 285&nbsp;000 ₫</p>
-    <p>КУПИТЬ СЕЙЧАС | ПОДРОБНЕЕ</p>
+  <!-- Подарочный набор -->
+  <section id="giftset" class="section section--giftset">
+    <div class="container">
+      <h2 class="section__title">Лучший подарок другу — ПОДАРОЧНЫЙ НАБОР</h2>
+      <div class="giftset">
+        <img class="giftset__image" src="assets/img/pr-0018-r.png" alt="Подарочный набор" width="200">
+        <div class="giftset__content">
+          <h3 class="giftset__heading">Giftset "Кофе по-вьетнамски"</h3>
+          <p class="giftset__description">Мон ква туит вай дань чо нгуой сань ч пhe. Хат ч пhe дук Реово кан чонг чон луа, ранг хай тео конг нге ва б куеят хок хой тир нхунг нгхе нхан наи тинг, кунг вди тинь еу, су дам ме куа нгуой лам ча пхе.. тао ра нхунг тач ча пхе тинь тхик чи дань риен чо бан.</p>
+          <p class="giftset__specs"><strong>Loai hat:</strong> Fine Robusta Blend<br><strong>Do ca:</strong> 700–800ml</p>
+          <div class="giftset__price">285 000 ₫</div>
+          <div class="giftset__actions">
+            <button class="btn btn--primary">КУПИТЬ СЕЙЧАС</button>
+            <button class="btn btn--outline">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Ваш персонализированный кофе&nbsp;&mdash; КОМБО &laquo;ФИН&nbsp;ФЭ&raquo;</h2>
-    <img src="assets/img/IMAGE.png" alt="Комбо 1" width="100">
-    <img src="assets/img/image_7.png" alt="Комбо 2" width="100">
-    <img src="assets/img/image_8.png" alt="Комбо 3" width="100">
-    <p>revo • revo • revo</p>
+  <!-- Комбо -->
+  <section id="combo" class="section section--combo">
+    <div class="container">
+      <h2 class="section__title">Ваш персонализированный кофе — КОМБО «ФИН ФЭ»</h2>
+      <div class="combo">
+        <img class="combo__item" src="assets/img/IMAGE.png" alt="Комбо 1" width="100">
+        <img class="combo__item" src="assets/img/image_7.png" alt="Комбо 2" width="100">
+        <img class="combo__item" src="assets/img/image_8.png" alt="Комбо 3" width="100">
+        <p class="combo__text">revo • revo • revo</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy;&nbsp;2025 Revo Coffee. Все права защищены.</p>
-    <img src="assets/icons/shopping-cart-3.png" alt="Корзина" width="30">
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy; 2025 Revo Coffee. Все права защищены.</p>
+      <img class="footer__cart" src="assets/icons/shopping-cart-3.png" alt="Корзина" width="30">
+    </div>
   </footer>
 
 </body>

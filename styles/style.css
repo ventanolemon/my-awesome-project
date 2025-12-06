@@ -1,0 +1,305 @@
+/* ===== Сброс стилей ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Подключение шрифта ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== Базовые настройки ===== */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f9f5f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Навигация ===== */
+.navigation {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #5a3921;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.navigation__link:hover,
+.navigation__link:focus {
+  background-color: #e63946;
+  color: white;
+  transform: translateY(-2px);
+}
+.navigation__link:active {
+  transform: translateY(0);
+}
+
+/* ===== Шапка ===== */
+.header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+.header__title {
+  font-size: 2.2rem;
+  color: #5a3921;
+  margin-bottom: 5px;
+}
+.header__subtitle {
+  font-size: 1.1rem;
+  color: #8b6f47;
+  margin-bottom: 20px;
+}
+.header__banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== Общие стили секций ===== */
+.section {
+  padding: 40px 0;
+}
+.section__title {
+  text-align: center;
+  color: #5a3921;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ===== Создайте основу ===== */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.feature {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.feature__icon {
+  margin-bottom: 10px;
+}
+.feature__title {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #5a3921;
+}
+.feature__text {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* ===== Продукты ===== */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.product {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.product__badge {
+  background: #5a3921;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.product__image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.product__name {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #333;
+  text-align: center;
+}
+.product__desc {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0 10px 10px;
+  text-align: center;
+}
+.product__price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #e63946;
+  margin: 10px 0;
+  text-align: center;
+}
+.product__actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* ===== Кнопки ===== */
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-align: center;
+}
+.btn--primary {
+  background: #5a3921;
+  color: white;
+}
+.btn--primary:hover {
+  background: #442d1b;
+  transform: scale(1.05);
+}
+.btn--primary:active {
+  transform: scale(0.98);
+}
+.btn--outline {
+  background: transparent;
+  color: #5a3921;
+  border: 1px solid #5a3921;
+}
+.btn--outline:hover {
+  background: #f0f0f0;
+  color: #442d1b;
+}
+.btn--outline:active {
+  transform: scale(0.98);
+}
+
+/* ===== Подарочный набор ===== */
+.giftset {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background: #fff8f0;
+  border-left: 5px solid #e63946;
+  padding: 25px;
+  border-radius: 10px;
+}
+.giftset__image {
+  flex-shrink: 0;
+}
+.giftset__content {
+  flex-grow: 1;
+}
+.giftset__heading {
+  color: #5a3921;
+  margin-bottom: 10px;
+}
+.giftset__description {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #666;
+}
+.giftset__specs {
+  margin: 10px 0;
+  color: #666;
+}
+.giftset__price {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #e63946;
+  margin: 15px 0;
+}
+.giftset__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ===== Комбо ===== */
+.combo {
+  text-align: center;
+}
+.combo__item {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.combo__text {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #5a3921;
+}
+
+/* ===== Подвал ===== */
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 0.9em;
+  background-color: #fff;
+  margin-top: 40px;
+}
+.footer__cart {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* ===== Плавная прокрутка ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Анимации ===== */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
